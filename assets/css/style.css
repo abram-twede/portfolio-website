@@ -12,6 +12,13 @@
 
 
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin : 0 auto;
+
+}
+
 
 
 
@@ -21,6 +28,8 @@
   height: 100vh;
   background: url("../img/home-bg.jpg") repeat scroll center center/cover;
 }
+
+
 
 
 /* social links */
