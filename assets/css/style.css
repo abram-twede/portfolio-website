@@ -13,9 +13,15 @@
 
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
-  margin : 0 auto;
+
+  padding-bottom: 30px;
+  /* Not boarder box */
+  box-sizing: content-box;
+
+
+
+
+
 
 }
 
@@ -151,7 +157,7 @@ p {
 }
 
 .section-title h2 {
-  font-size: 25px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -617,7 +623,7 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  color: #999;
   padding-top: 120px;
 }
 
@@ -796,6 +802,7 @@ blockquote {
   background: #f7f7f7;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: -90px;
 }
 
 #footer .socials-media {
@@ -1266,4 +1273,36 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+
+  /* mobile nav menu */
+  /* Style for larger screens */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: block;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Hide the menu by default on mobile devices */
+@media screen and (max-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+
+  /* Show the menu when the 'show' class is added */
+  .menu-container.show {
+    display: block;
+  }
+}
+
+
 }
