@@ -17,6 +17,12 @@
   padding-bottom: 30px;
   /* Not boarder box */
   box-sizing: content-box;
+/* make it so that the images disappear when nav menu is pulled up */
+  display: block;
+
+
+
+
 
 
 
@@ -636,7 +642,6 @@ p {
   margin-right: 70px;
   height: 500px;
   border-radius: 100%;
-  overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover;
   /* boarder same blue */
@@ -1292,17 +1297,16 @@ blockquote {
   }
 }
 
-/* Hide the menu by default on mobile devices */
-@media screen and (max-width: 768px) {
-  .menu-container {
-    display: none;
-  }
-
-  /* Show the menu when the 'show' class is added */
-  .menu-container.show {
-    display: block;
-  }
+/* Hide the navigation menu by default */
+/* Hidden by default */
+.nav-menu {
+  display: none;
 }
+
+
+
+
+
 
 
 }
