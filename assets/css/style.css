@@ -636,11 +636,11 @@ p {
 
 
 #about .div-img-bg .about-img img {
-  width: 500px;
+  width: 140%;
   margin-top: -50px;
   margin-left: 20px;
   margin-right: 70px;
-  height: 500px;
+  height: 140%;
   border-radius: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -666,7 +666,6 @@ p {
  
   display: inline-block;
   height: 2px;
-  position: relative;
   width: 100%;
   margin-bottom: 20px;
   margin-left: 130px;
