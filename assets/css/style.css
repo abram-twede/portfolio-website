@@ -47,7 +47,7 @@
   margin-right: 10px;
   /* center underneath about title */
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
 }
 
@@ -803,19 +803,20 @@ blockquote {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: -90px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
 }
 
 #footer .socials-media {
   width: 100%;
+  margin-bottom: 150px;
 }
 
 #footer .socials-media ul {
   display: inline-block;
   float: none;
-  margin: 0 0 20px 0;
+
 }
 
 #footer .socials-media ul li {
@@ -834,6 +835,7 @@ blockquote {
   transition: all 0.5s ease-in-out 0s;
 }
 
+
 #footer .socials-media ul li a:hover {
   color: #a6c6dd;
   transition: all 0.5s ease-in-out 0s;
@@ -843,7 +845,6 @@ blockquote {
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 500;
-  margin-top: 0;
   text-transform: uppercase;
 }
 
