@@ -10,18 +10,60 @@
 # General
 --------------------------------------------------------------*/
 
+/* make the images display horizontally */
 
 
-.img-fluid {
-  z-index: 1;
 
-  padding-bottom: 30px;
-  /* Not boarder box */
-  box-sizing: content-box;
-/* make it so that the images disappear when nav menu is pulled up */
-  display: block;
+
+.ah{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap:2px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+
+
+  
+
 
 }
+.portfolio-img{
+  position: relative;
+  flex: 1;
+  padding: 0 5px;
+
+}
+.portfolio-img img{
+  width: 200%;
+
+
+}
+
+
+
+
+
+
+.row .portfolio-container .col-lg-4 .col-md-6 .portfolio-item .filter-app{
+  margin-bottom: 30px;
+}
+
+.img-fluid {
+  position: relative;
+
+  z-index: 1;
+  padding: 20px;
+  /* Not boarder box */
+
+
+
+
+}
+
 
 
 /* hello this is an edit */
@@ -158,6 +200,7 @@ p {
   font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin: auto;
 }
 
 .form-control {
@@ -629,10 +672,7 @@ p {
   padding-top: 120px;
 }
 
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #f7f7f7;
-}
+
 
 #about .div-img-bg .about-img img {
   width: 140%;
@@ -1087,6 +1127,7 @@ blockquote {
   }
   
   .portfolio-details .portfolio-info {
+    
     padding: 30px;
     box-shadow: 0px 0 30px rgba(75, 74, 74, 0.08);
   }
