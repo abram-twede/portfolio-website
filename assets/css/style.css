@@ -663,7 +663,7 @@ p {
 
 
 #about .div-img-bg .about-img img {
-  width: 140%;
+  width: 130%;
   margin-top: -50px;
   margin-left: 20px;
   margin-right: 70px;
@@ -1494,11 +1494,55 @@ blockquote {
   display: none;
 }
 
+/* style for portfolio info/ melondy ai  */
+.portfolio-info{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* make the padding white */
+  padding: 20px;
+  /* Not boarder box */
+  box-sizing: content-box;
+  /* make the background white */
+  background-color: #969696;
+  /* make the boarder blue */
+  border: 5px solid #a6c6dd;
 
+}
+}
+
+
+
+
+
+.something{
+  padding : 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ebf7ff;
+  /* round the corners  */
+  border-radius: 10px;
+}
+
+.pictures{
+  padding : 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ececec;
+  /* round the corners  */
+  border-radius: 10px;
+  /* make the images smaller */
+  /* shrink to the size of the container */
 
 
 
 
 
 }
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+
 
