@@ -28,56 +28,15 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" >
-    <div class="container d-flex align-items-center justify-content-between">
-      <nav id="navbar" class="navbar">
-        <ul>
-            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+  <div id="menu"></div>
   
-          <li class="dropdown"><a href="#"><span>Art</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="2DArt.html">2D Art</a></li>
-              <li><a href="logos.html">Logo/Marketing</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="melondy.html">Melondy AI</a></li>
-              <li><a href="allinai.html">All in AI</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Experience</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">TED Speech</a></li>
-            </ul>
-          </li>
-           <li class="dropdown"><a href="#"><span>Adventure</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Mountain Climbing</a></li>
-              <li><a href="snowboarding.html">Snowboarding</a></li>
-              <li><a href="bball.html">Basketball</a></li>
-              <li><a href="tennis.html">Tennis</a></li>
-              <li><a href="#">Biking</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Volenteering</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="scouts.html">Eagle Scout Project</a></li>
-              <li><a href="#">Medical Volunteer</a></li>
-              <li><a href="ymsl.html">YMSL</a></li>
-              <li><a href="cpr.html">CPR Instructor</a></li>
-              
-            </ul>
-          </li>
-        
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu').innerHTML = data;
+      });
+  </script>
 
   <main id="main">
 
