@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- hello -->
 <head>
-  <style>
-    #intro {
-        display: flex; /* Enable flexbox */
-        flex-direction: column; /* Stack children vertically */
-        align-items: center; /* Center children horizontally */
-        justify-content: center; /* Center children vertically */
-        height: 100vh; /* Full height of the viewport */
-    }
-    .circular-image {
-        border-radius: 50%; /* This makes the image circular */
-        width: 200px; /* Set the width as desired */
-        height: 200px; /* Set the height as desired */
-        object-fit: cover; /* This ensures the image covers the area without being stretched */
-        margin-bottom: 20px; /* Optional: adds some space between the image and the text */
-        /* outside layer */
-
-    }
-</style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Abram Twede</title>
+  <title>Research Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
   <!-- Favicons -->
-  <link href="assets/img/lo.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
 </head>
 
+  <!-- ======= Header ======= -->
+  <div id="menu"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu').innerHTML = data;
+      });
+  </script>
+
+  <body>
+    <body>
+      <div id="menu"></div>
+      
+      <script>
+        fetch('menu.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('menu').innerHTML = data;
+          });
+      </script>
+  
+  
+  
+    <main id="main">
+  
+      <!-- ======= About Section ======= -->
+      <div id="about" class="paddsection">
+        <div class="container">
+          <div class="row justify-content-between">
+  
+            <div class="col-lg-4">
+              <div class="div-img-bg">
+                <div class="about-img">
+                  <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+                </div>
+              </div>
+  
+            </div>
+  
+          
+            <!-- about me -->
+            
+          
+            
+               
+        
+              
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Section -->
+    </div>
+  <main id="main" class="paper">
+    <div id="primary" class="content-area">
+      <main id="main" class="site-main" role="main">
+        <article id="post-2" class="post-2 page type-page status-publish hentry">
+          <header class="entry-header">
+            <h1 class="entry-title">Hi! I'm Abram</h1>
+          </header><!-- .entry-header -->
+          <div class="entry-content">
+            <p style="text-align: left;">This is my website</p>
+            <p style="text-align: left;">I’m currently a student at cheyenne moutain high school and will be attending dartmouth college in the fall</p>
+            <p style="text-align: left;">I love exploring the great outdoors. </p>
+            <p style="text-align: left;">I'm passionate about medicine and technology.</p>
+            <p style="text-align: left;">*****</p>
+           
+            
+          <footer class="entry-footer"></footer><!-- .entry-footer -->
+        </article><!-- #post-## -->
+      </main><!-- #main -->
+    </div>
+  </main>
 <body>
   <body>
     <div id="menu"></div>
@@ -62,72 +112,52 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-between">
 
-          <div class="col-lg-4">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
-              </div>
-            </div>
 
-          </div>
-
-        
-          <!-- about me -->
-          <div class="col-lg-7">
-            <div class="about-descr">
-
-              <p class="p-heading">About Me</p>
-              
-
-            </div>
-        
-          
-             
-      
-            
-
-          </div>
-        </div>
+  <!-- ======= Footer ======= -->
+  <style>
+    #footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+  </style>
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/abram-twede"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://twitter.com/abram_twede"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/abram_twede/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/abram-twede/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
       </div>
+      <p>&copy; 2025 Abram Twede</p>
     </div>
-    <!-- End About Section -->
   </div>
-
-<!-- ======= Footer ======= -->
-<div id="footer" class="text-center">
-  <div class="container">
-    <div class="socials-media text-center">
-
-      <ul class="list-unstyled">
-        <li><a href="https://github.com/abram-twede"><i class="bi bi-github"></i></a></li>
-        <li><a href="https://twitter.com/abram_twede"><i class="bi bi-twitter"></i></a></li>
-        <li><a href="https://www.instagram.com/abram_twede/"><i class="bi bi-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/abram-twede/"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-
-    </div>
-
-    <p>&copy; 2025 Abram Twede</p>
-  </div>
-</div>
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-<script src="assets/js/main.js"></script>
-
+  <style>
+    .paper {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+    }
+  </style>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
-<!-- bruhh -->
 </html>

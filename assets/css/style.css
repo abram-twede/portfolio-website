@@ -1,4 +1,7 @@
 
+
+
+
 .centerthing{
   text-align: center;
   margin-left: 200px;
@@ -247,7 +250,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background:rgb(166, 221, 172);
+  background:rgb(116, 170, 122);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -521,7 +524,7 @@ p {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #a6c6dd;
+  color: rgb(116, 170, 122);
 }
 
 .navbar-mobile .getstarted,
@@ -881,7 +884,7 @@ blockquote {
 
 
 #footer .socials-media ul li a:hover {
-  color: #a6c6dd;
+  color: rgb(116, 170, 122);;
   transition: all 0.5s ease-in-out 0s;
 }
 
