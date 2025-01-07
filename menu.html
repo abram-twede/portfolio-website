@@ -1,58 +1,134 @@
 
 </head>
-
+<head>
+  <style>
+    #intro {
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        justify-content: center; /* Center children vertically */
+        height: 100vh; /* Full height of the viewport */
+    }
+    .circular-image {
+        border-radius: 50%; /* This makes the image circular */
+        width: 200px; /* Set the width as desired */
+        height: 200px; /* Set the height as desired */
+        object-fit: cover; /* This ensures the image covers the area without being stretched */
+        margin-bottom: 20px; /* Optional: adds some space between the image and the text */
+    }
+    #logo-container {
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Space between text and header */
+        font-family: "Playfair Dis", serif;
+        font-size: 50px;
+        color: #333; /* Adjust the color to match the theme */
+        padding: 10px; /* Add padding if needed */
+        margin-top: 100px;
+    }
+    #logo-text {
+        color: #333; /* Adjust the color to match the theme */
+        padding: 10px; /* Add padding if needed */
+        margin-bottom: 100px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abram Twede</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/lo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 <body>
+  <div id="logo-container">
+    <div id="logo-text">
+      Abram Twede
+    </div>
+  </div>
+  <div id="menu"></div>
+  
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu').innerHTML = data;
+      });
+  </script>
 
   <!-- ======= Header ======= -->
-  <header id="header" >
+  <header id="header">
     <div class="container d-flex align-items-center justify-content-between">
       <nav id="navbar" class="navbar">
-        <ul>
+        <div class="centerthing">
+          <ul>
             <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-  
-          <li class="dropdown"><a href="#"><span>Art</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+            
+            <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>High School</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="melondy.html">Melondy AI</a></li>
+                    <li><a href="allinai.html">All in AI</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Adventure</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Mountain Climbing</a></li>
+                <li><a href="snowboarding.html">Snowboarding</a></li>
+                <li><a href="bball.html">Basketball</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="#">Biking</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Volunteering</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="scouts.html">Eagle Scout Project</a></li>
+                <li><a href="#">Medical Volunteer</a></li>
+                <li><a href="ymsl.html">YMSL</a></li>
+                <li><a href="cpr.html">CPR Instructor</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="RISE.html">BU RISE Capstone</a></li>
+                <li><a href="#">Publications</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Art</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
                 <li><a href="2DArt.html">2D Art</a></li>
-              <li><a href="logos.html">Logo/Marketing</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="melondy.html">Melondy AI</a></li>
-              <li><a href="allinai.html">All in AI</a></li>
-            </ul>
-          </li>
-        
-           <li class="dropdown"><a href="#"><span>Adventure</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Mountain Climbing</a></li>
-              <li><a href="snowboarding.html">Snowboarding</a></li>
-              <li><a href="bball.html">Basketball</a></li>
-              <li><a href="tennis.html">Tennis</a></li>
-              <li><a href="#">Biking</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Volunteering</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="scouts.html">Eagle Scout Project</a></li>
-              <li><a href="#">Medical Volunteer</a></li>
-              <li><a href="ymsl.html">YMSL</a></li>
-              <li><a href="cpr.html">CPR Instructor</a></li>
-              
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="RISE.html">BU RISE Capstone</a></li>
-              <li><a href="#">Publications</a></li>
-            <li><a href="#">Independent Research</a></li>
-
-            </ul>
-
-        
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+                <li><a href="logos.html">Logo/Marketing</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle bi bi-list"></i>
+        </div>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
+
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navbar = document.querySelector('.navbar ul');
+  
+        mobileNavToggle.addEventListener('click', () => {
+          navbar.classList.toggle('active');
+          mobileNavToggle.classList.toggle('bi-x');
+        });
+      });
+    </script>
+</body>
+</html>

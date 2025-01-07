@@ -1,8 +1,8 @@
 
-
-
-
-
+.centerthing{
+  text-align: center;
+  margin-left: 200px;
+}
 .ah{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -247,7 +247,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background:#a6c6dd;
+  background:rgb(166, 221, 172);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -261,7 +261,7 @@ p {
 }
 
 .back-to-top:hover {
-  background: #a6c6dd;
+  background: rgb(166, 221, 172);
   color: #fff;
 }
 
@@ -278,8 +278,15 @@ p {
   z-index: 997;
   padding: 15px 0;
   background-color: #fff;
-  top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  /* center everything  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* center everything  */
+
 }
 
 #header.header-scrolled,
@@ -295,11 +302,7 @@ p {
   max-height: 40px;
 }
 
-@media (max-width: 992px) {
-  #header {
-    border: 0;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -316,6 +319,8 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
 /* in the middle of the webpage horizontally */
 .navbar .logo img {
   max-width: 100%;
@@ -323,7 +328,10 @@ p {
 }
 
 .navbar {
-  padding: 0;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none;
 }
 
 .navbar ul {
@@ -331,6 +339,8 @@ p {
   padding: 0;
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -345,35 +355,45 @@ p {
   align-items: center;
   justify-content: space-between;
   /* center them */
-  padding: 10px 15px;
+  padding: 10px 30px;
+/* shift to the riffht to center */
+
+/* center horizontally */
+
 
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #7e7d7d;
-  white-space: nowrap;
-  transition: 0.3s;
+
+
+
+  
 }
 
 .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
-  margin-left: 5px;
+    /* center all elements automatically centered */
+
+
+
+    
 }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #a6c6dd;
+  color:rgb(116, 170, 122);
 }
 
 .navbar .dropdown ul {
   
   display: block;
   position: absolute;
-  left: 30px;
+  left: 50px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -401,7 +421,7 @@ p {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #a6c6dd;
+  color: rgb(116, 170, 122);
 }
 
 .navbar .dropdown:hover>ul {
@@ -536,7 +556,7 @@ p {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #a6c6dd;
+  color: rgb(116, 170, 122);;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -546,11 +566,7 @@ p {
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
-#hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
-  height: 100vh;
-  width: 100%;
-}
+
 
 #hero .hero-content {
   height: 100vh;
@@ -605,7 +621,7 @@ p {
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
+
   font-weight: 300;
   margin: 0;
 }
@@ -672,7 +688,7 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   /* boarder same blue */
-  border: 5px solid #a6c6dd;
+  border: 5px solid rgb(116, 170, 122);;
 }
 
 #about .about-descr .p-heading {
@@ -739,7 +755,7 @@ p {
 }
 
 .journal-txt h4 a:hover {
-  color: #a6c6dd;
+  color: rgb(116, 170, 122);
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1102,10 +1118,39 @@ blockquote {
     position: relative;
   }
   
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
+  .portfolio-details .portfolio-d  /* Mobile nav menu */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .mobile-nav-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+    .nav-menu {
+      display: none;
+    }
+  }tween;
+  }
+  
+  /* Code block suggestion */
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    mobileNavToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+  });f;
     opacity: 1;
     border: 1px solid #b8a07e;
   }
@@ -1169,11 +1214,11 @@ blockquote {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid rgb(116, 170, 122);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: rgb(116, 170, 122);
 }
 
 .portfolio-details .portfolio-info {
@@ -1289,7 +1334,7 @@ blockquote {
 
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
-  color: #b8a07e;
+  color: rgb(116, 170, 122)
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -1323,8 +1368,8 @@ blockquote {
     width: 100%;
     text-align: center;
     border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
+   
+    
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -1388,26 +1433,364 @@ blockquote {
  */
 @media (max-width: 320px) {
 
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
 
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
+
+
 
   .nav-menu li {
     float: none;
     width: 100%;
     text-align: center;
     border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
+
+
+    paddi/* Ensure the header container uses flexbox and centers its content */
+
+header {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center; /* Center the navbar vertically */
+  width: 100%;
+}
+
+/* Ensure the navbar container uses flexbox */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style individual navbar items */
+.navbar li {
+  margin: 0 15px; /* Add spacing between items */
+}
+
+/* Style the links within the navbar */
+.navbar a {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  padding: 10px;.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 30px);
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}/* Hover and active states for links */
+.navbar a:hover,
+.navbar .active {
+  color: rgb(116, 170, 122);
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar .dropdown ul li {
+  padding: 10px 15px;
+}
+
+.navbar .dropdown ul li a {
+  color: #333;
+}
+
+.navbar .dropdown ul li a:hover {
+  color: rgb(116, 170, 122);
+}
+
+.responsive {
+  float: right;
+  padding-top: 15px;
+  display: block;
+}/* Ensure the header container uses flexbox and centers its content */
+header {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center; /* Center the navbar vertically */
+  width: 100%;
+}
+
+/* Ensure the navbar container uses flexbox */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style individual navbar items */
+.navbar li {
+  margin: 0 15px; /* Add spacing between items */
+  position: relative; /* Ensure dropdowns are positioned relative to their parent */
+}
+
+/* Style the links within the navbar */
+.navbar a {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7d7d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover and active states for links */
+.navbar a:hover,
+.navbar .active {
+  color: rgb(116, 170, 122);;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  left: 0; /* Align dropdown with the parent item */
+  top: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar .dropdown ul li {
+  padding: 10px 15px;
+}
+
+.navbar .dropdown ul li a {
+  color: #333;
+}
+
+.navbar .dropdown ul li a:hover {
+  color: rgb(116, 170, 122);;
+}
+
+.responsive {
+  float: right;
+  padding-top: 15px;
+  display: block;
+}/* Style individual navbar items */
+.navbar li {
+  margin: 0 15px; /* Add spacing between items */
+  position: relative; /* Ensure dropdowns are positioned relative to their parent */
+}
+
+/* Style the links within the navbar */
+.navbar a {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7d7d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover and active states for links */
+.navbar a:hover,
+.navbar .active {
+  color: rgb(116, 170, 122);;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  left: 50%; /* Center the dropdown */
+  top: 100%;
+  transform: translateX(-50%); /* Adjust to align with parent */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar .dropdown ul li {
+  padding: 10px 15px;
+}
+
+.navbar .dropdown ul li a {
+  color: #333;
+}
+
+.navbar .dropdown ul li a:hover {
+  color: #a6c6dd;
+}/* Ensure the navbar container uses flexbox */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style individual navbar items */
+.navbar li {
+  margin: 0 15px; /* Add spacing between items */
+  position: relative; /* Ensure dropdowns are positioned relative to their parent */
+}
+
+/* Style the links within the navbar */
+.navbar a {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7d7d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover and active states for links */
+.navbar a:hover,
+.navbar .active {
+  color: rgb(116, 170, 122);
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  left: 0; /* Align dropdown with the parent item */
+  top: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar .dropdown ul li {
+  padding: 10px 15px;
+}
+
+.navbar .dropdown ul li a {
+  color: #333;
+}
+
+.navbar .dropdown ul li a:hover {
+  color: rgb(116, 170, 122);
+}
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7d7d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover and active states for links */
+.navbar a:hover,
+.navbar .active {
+  color: rgb(116, 170, 122);
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar .dropdown ul li {
+  padding: 10px 15px;
+}
+
+.navbar .dropdown ul li a {
+  color: #333;
+}
+
+.navbar .dropdown ul li a:hover {
+  color: rgb(116, 170, 122);
+}g-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -1507,7 +1890,7 @@ blockquote {
   /* make the background white */
   background-color: #969696;
   /* make the boarder blue */
-  border: 5px solid #a6c6dd;
+  border: 5px solid rgb(116, 170, 122);
 
 }
 }
@@ -1520,7 +1903,7 @@ blockquote {
   padding : 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #ebf7ff;
+  background-color: #dff3e3;
   /* round the corners  */
   border-radius: 10px;
 }
